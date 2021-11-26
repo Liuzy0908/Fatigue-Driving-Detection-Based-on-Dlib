@@ -18,7 +18,9 @@ from Eigen_Face_Recognizer import *
 from get_everybody_EARandMAR_standard import *
 
 face_path =     './face_path'                       # 所有驾驶人脸部图像的存放路径
-path =          "./test_video/driving.mp4"          # 待检测视频的存放路径
+# path =          "./test_video/driving.mp4"          # 待检测的本地视频的存放路径
+path = 0                                            # 切换此处使用本地摄像头实时检测
+
 # 绘制正方体12轴所需的索引
 line_pairs = [[0, 1], [1, 2], [2, 3], [3, 0],
               [4, 5], [5, 6], [6, 7], [7, 4],
@@ -130,12 +132,9 @@ while True:
 
                     if EAR < EAR_threshold:
                         blink_counter += 1
-
                     else:
                         if blink_counter >= 5:
-                            if blinks <= 2:
-                                blinks += 1
-
+                            blinks += 1
                         blink_counter = 0
 
                     # 如果在60s内眨眼超过20次
