@@ -46,11 +46,12 @@ https://www.bilibili.com/video/BV1By4y1k7PY?spm_id_from=333.999.0.0
 
 # 如何安装必要的依赖库
 必要的库有: Dlib. 其依赖于 cmake 和 boost
-> + 1.activate {your env}
-> + 2.pip install cmake
-> + 3.pip install boost
-> + 4.cd 进入存放dlib-19.7.0-cp36-cp36m-win_amd64.whl的文件夹下(已准备好)
-> + 5.pip install dlib-19.7.0-cp36-cp36m-win_amd64.whl
+> + 1. activate {your env}
+> + 2. pip install cmake
+> + 3. pip install boost
+> + 4. cd 进入存放dlib-19.7.0-cp36-cp36m-win_amd64.whl的文件夹下(已准备好)
+> + 5. pip install dlib-19.7.0-cp36-cp36m-win_amd64.whl
+> + 6. 重启编译器
 
 
 
