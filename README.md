@@ -33,7 +33,7 @@ https://www.bilibili.com/video/BV1By4y1k7PY?spm_id_from=333.999.0.0
 > **haarcascade_frontalface_alt.xml**: 用于检测人脸部位置的Harr级联分类器文件\
 > **head_posture_estimation.py**:   头部姿态估计文件\
 > **main.py:      主函数, 用于处理拍摄好的视频图像**\
-> **shape_predictor_68_face_landmarks.dat**: Dlib数据库文件\
+> **shape_predictor_68_face_landmarks.dat**: Dlib数据库文件 (下载链接:https://pan.baidu.com/s/1TgkrCThSn5seA9BTs0lJrg, 提取码:6fw2)\
 
 # 如何运行该项目
 在运行项目之前, 应确保你有用于测试的视频文件. 本项目中提供了一个视频例程(driving.mp4)
