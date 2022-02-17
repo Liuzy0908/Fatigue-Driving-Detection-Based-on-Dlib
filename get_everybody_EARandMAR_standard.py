@@ -72,5 +72,5 @@ def get_everybody_EARandMAR_standard(face_path):
         everybody_pitch_mean.append(pitch_mean_per_person)
         everybody_EAR_mean.append(EAR_mean_per_person)          # 把每个人眼睛的平均值记录
         everybody_EAR_min.append(EAR_min_per_person)
-        return everybody_EAR_mean, everybody_EAR_min, everybody_pitch_mean
+    return everybody_EAR_mean, everybody_EAR_min, everybody_pitch_mean
 
