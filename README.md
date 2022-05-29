@@ -39,8 +39,8 @@ https://www.bilibili.com/video/BV1By4y1k7PY?spm_id_from=333.999.0.0
 在运行项目之前, 应确保你有用于测试的视频文件. 本项目中提供了一个视频例程(driving.mp4)
 
 > 必须执行: 首先运行 drivers_img_acquire.py 文件, 输入当前驾驶人的名字英文缩写,获取不同驾驶人的两类图像
-> + 获取的第一类图像为 摄像头全景图像, 默认存放于 './capture_path/{your name}'
-> + 获取的第二类图像为 驾驶人人脸区域图像, 默认存放于 './face_path/{your name}'
+> + 获取的第一类图像为 摄像头全景图像, 默认存放于 './capture_path/{your name}'. 注意: 要删除capture_path文件夹下面的txt文件.
+> + 获取的第二类图像为 驾驶人人脸区域图像, 默认存放于 './face_path/{your name}'. 注意: 要删除face_path文件夹下面的txt文件.
  
 > 其次运行main.py程序即可.
 
