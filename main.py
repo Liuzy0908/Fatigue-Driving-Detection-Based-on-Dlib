@@ -16,13 +16,14 @@ import datetime
 from Eigen_Face_Recognizer import *
 from get_everybody_EARandMAR_standard import *
 
-is_local_video = False                              # TODO:此处控制 是否采用 本地摄像头实时检测
-face_path = './face_path'                           # 所有驾驶人脸部图像的存放路径
+# 此处控制 是否采用 本地摄像头实时检测
+is_local_video = True                           # TODO: True 表示使用本地摄像头, False表示使用"./test_video/driving.mp4"视频
+face_path = './face_path'                       # 所有驾驶人脸部图像的存放路径
 
 if is_local_video:
-    path = "./test_video/driving.mp4"               # 待检测的本地视频的存放路径
+    path = 0                                    # 待检测的本地视频的存放路径
 else:
-    path = 0                                        # 使用本地摄像头实时检测
+    path = "./test_video/driving.mp4"           # 使用本地摄像头实时检测
 
 # 绘制正方体12轴所需的索引
 line_pairs = [[0, 1], [1, 2], [2, 3], [3, 0],
