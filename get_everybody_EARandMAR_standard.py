@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 ####################################################
-#   作者: 刘朝阳
-#   时间: 2020.05.01
+#   编写时间: 2020.05.01
 #   更新时间: 2021.11.25
 #   功能: 在计算PERCLOS时, 需要知道驾驶在正常情况下的眼睛开度, 来作为基准计算
 #   使用说明: 自动调用, 无需操作
@@ -21,7 +20,7 @@ ARE = aspect_ratio_estimation()
 # 使用dlib.get_frontal_face_detector() 获得脸部位置检测器
 detector = dlib.get_frontal_face_detector()
 # 使用dlib.shape_predictor获得脸部特征位置检测器
-predictor = dlib.shape_predictor('shape_predictor_68_face_landMARks.dat')
+predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 # 分别获取左右眼面部标志的索引
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
@@ -72,5 +71,6 @@ def get_everybody_EARandMAR_standard(face_path):
         everybody_pitch_mean.append(pitch_mean_per_person)
         everybody_EAR_mean.append(EAR_mean_per_person)          # 把每个人眼睛的平均值记录
         everybody_EAR_min.append(EAR_min_per_person)
+
     return everybody_EAR_mean, everybody_EAR_min, everybody_pitch_mean
 

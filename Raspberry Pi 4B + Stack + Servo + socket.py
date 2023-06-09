@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-             
+# -*- coding: utf-8 -*-
+# 此文件为树莓派端的舵机控制与摄像头数据采集传输程序, 暂时用不到.
 from __future__ import division     #对未来版本兼容  只能放第一句
 import Adafruit_PCA9685             #舵机控制库 pwm、频率等
 import time                         #time库，用于延时
