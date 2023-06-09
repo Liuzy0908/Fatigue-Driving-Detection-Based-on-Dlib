@@ -3,9 +3,7 @@
 # My file
 /capture_path/
 /face_path/
-/lzy/
 myTest.py
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

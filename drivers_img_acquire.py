@@ -16,19 +16,20 @@ def drivers_img_acquire(capture_path, face_path, video_path):
     '''
     打开摄像头，检测该帧图像中的人脸，并进行剪切、缩放
     '''
-    name=input('当前驾驶人的名字(英文缩写即可):')
+    if not os.path.exists(capture_path):
+        os.mkdir(capture_path)
+    if not os.path.exists(face_path):
+        os.mkdir(face_path)
+
+    name=input('当前待识别驾驶人的名字(英文缩写即可): ')
 
     capture_path=os.path.join(capture_path,name)    # 将路径和驾驶人名字进行拼接
     face_path=os.path.join(face_path,name)
 
-    if os.path.isdir(capture_path):         # 如果已经存在这个路径
-        shutil.rmtree(capture_path)         # 删除这个路径所指的文件夹
-
-    if os.path.isdir(face_path):
-        shutil.rmtree(face_path)
-    #创建文件夹
-    os.mkdir(capture_path)
-    os.mkdir(face_path)
+    if not os.path.exists(capture_path):
+        os.mkdir(capture_path)
+    if not os.path.exists(face_path):
+        os.mkdir(face_path)
 
     #创建一个级联分类器
     face_casecade=cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
